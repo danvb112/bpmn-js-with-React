@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bpmn-js": "3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-string": "^1.2.3"
@@ -22,9 +21,8 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
     "bpmn-font": "0.9.3",
-    "bpmn-js-properties-panel": "0.32.1",
-    "camunda-bpmn-moddle": "4.1.2",
-    "camunda-dmn-moddle": "1.0.0",
+    "bpmn-js": "^17.8.1",
+    "bpmn-js-properties-panel": "^5.17.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",

@@ -1,5 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
 //@ts-ignore
 import {BpmnView} from './diagramViewer'
 //@ts-ignore
@@ -14,12 +12,6 @@ export function App() {
       */}
       <BpmnView />
 
-      {/** This is for Model creator 
-      Comment out the nextblock will reveal the above Viewer
-      */}
-      {/* <div id="js-canvas-container">
-        <ModelerCreator />
-      </div> */}
     </div>
   );
 }
