@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "diagram-js-grid": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vite-plugin-string": "^1.2.3"
+    "vite-plugin-string": "^1.2.3",
+    "zeebe-bpmn-moddle": "^1.1.0"
   },
   "devDependencies": {
+    "@bpmn-io/properties-panel": "^3.20.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -23,6 +26,8 @@
     "bpmn-font": "0.9.3",
     "bpmn-js": "^17.8.1",
     "bpmn-js-properties-panel": "^5.17.1",
+    "camunda-transaction-boundaries": "^1.1.2",
+    "diagram-js-minimap": "^5.1.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",

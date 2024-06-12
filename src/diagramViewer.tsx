@@ -7,6 +7,13 @@ import {
   BpmnPropertiesProviderModule,
   //@ts-ignore
 } from 'bpmn-js-properties-panel';
+//@ts-ignore
+import minimapModule from 'diagram-js-minimap';
+//@ts-ignore
+import transactionBoundariesModule from 'camunda-transaction-boundaries';
+//@ts-ignore
+import gridModule from 'diagram-js-grid';
+
 
 // import diagramXML from './diagramCreator/resources/newDiagram.bpmn';
 
@@ -25,10 +32,17 @@ export function BpmnView() {
         propertiesPanel: {
           parent: '#properties'
         },
+        bpmnRenderer: {
+          // defaultFillColor: '#333',
+          // defaultStrokeColor: '#fff'
+        },
         additionalModules: [
           BpmnPropertiesPanelModule,
-          BpmnPropertiesProviderModule
-        ]
+          BpmnPropertiesProviderModule,
+          transactionBoundariesModule,
+          minimapModule,
+          gridModule,
+        ],
       });
     }
 
@@ -40,6 +54,8 @@ export function BpmnView() {
     }
 
     if (viewer) {
+      viewer.get('eventBus')
+
       makeFetch(viewer);
     }
   }, [viewer])
